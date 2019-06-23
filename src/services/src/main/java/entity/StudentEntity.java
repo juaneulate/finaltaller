@@ -30,13 +30,13 @@ public class StudentEntity implements Serializable {
     @ManyToOne
     @JoinColumn(name = "id_login", nullable = false, foreignKey = @ForeignKey(name = "FK_student_login"))
     @JsonIgnore
-    private LoginEntity login;
+    private LoginEntity loginEntity;
 
 
     @JsonIgnore
     @Transient
-    public static StudentEntity build(String fullName, int age) {
-        return StudentEntity.builder().fullName(fullName).age(age).build();
+    public static StudentEntity build(String fullName, int age, LoginEntity loginEntity) {
+        return StudentEntity.builder().fullName(fullName).age(age).loginEntity(loginEntity).build();
     }
 
     @JsonIgnore

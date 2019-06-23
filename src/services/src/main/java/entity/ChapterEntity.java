@@ -30,7 +30,13 @@ public class ChapterEntity implements Serializable {
     @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @JoinColumn(name = "id_course", foreignKey = @ForeignKey(name = "FK_chapter_course"))
-    private CourseEntity course;
+    private CourseEntity courseEntity;
+
+    @JsonIgnore
+    @Transient
+    public static ChapterEntity build(String name, String description, CourseEntity courseEntity) {
+        return ChapterEntity.builder().name(name).description(description).courseEntity(courseEntity).build();
+    }
 
     @JsonIgnore
     @Transient

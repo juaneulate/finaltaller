@@ -1,4 +1,4 @@
-package rest.configuration;
+package rest;
 
 
 import com.google.gson.reflect.TypeToken;
@@ -21,7 +21,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
 
-@Path(RestPath.REST_LOGIN)
+@Path(RestPath.REST_QUESTION)
 @Produces({MediaType.APPLICATION_JSON})
 @Consumes({MediaType.APPLICATION_JSON})
 @JBossLog

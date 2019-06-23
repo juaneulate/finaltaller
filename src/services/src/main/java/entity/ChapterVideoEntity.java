@@ -21,11 +21,11 @@ public class ChapterVideoEntity implements Serializable {
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @JoinColumn(name = "id_chapter", foreignKey = @ForeignKey(name = "FK_chapter_video_chapter"))
-    private ChapterEntity chapter;
+    private ChapterEntity chapterEntity;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @JoinColumn(name = "id_video", foreignKey = @ForeignKey(name = "FK_chapter_video_video"))
-    private VideoEntity video;
+    private VideoEntity videoEntity;
 
     @JsonIgnore
     @Transient

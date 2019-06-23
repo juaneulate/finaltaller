@@ -16,6 +16,13 @@ public final class RestPath {
     public static final String REST_LOGIN = "login";
     public static final String REST_PERSON = "person";
     public static final String GET_QUESTION = "get-question";
+    public static final String REST_QUESTION = "question";
+    public static final String REST_STUDENT = "student";
+    public static final String REST_COURSE = "course";
+    public static final String REST_CHAPTER = "chapter";
+    public static final String REST_VIDEO = "video";
+    public static final String GET_COURSE_FREE = "get-course-free";
+    public static final String GET_COURSE_PREMIUM = "get-course-premium";
 
     //endregion
 
@@ -58,9 +65,11 @@ public final class RestPath {
     public static final String CODE = "code";
     public static final String USERNAME = "username";
     public static final String PASSWORD = "password";
+    public static final String COURSE = "course";
+    public static final String CHAPTER = "chapter";
 
     public static final String AGE = "age";
-    public static final String GET_PERSON = "get-person";
+    public static final String GET_STUDENT = "get-student";
 
 
 

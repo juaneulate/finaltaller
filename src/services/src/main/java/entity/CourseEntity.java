@@ -1,6 +1,7 @@
 package entity;
 
 import entity.config.EntityPath;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.codehaus.jackson.annotate.JsonIgnore;
@@ -8,9 +9,11 @@ import org.codehaus.jackson.annotate.JsonIgnore;
 import javax.persistence.*;
 import java.io.Serializable;
 
+
 @Data
 @EqualsAndHashCode(of = {"id"})
 @Entity
+@Builder
 @Table(name = EntityPath.COURSE)
 public class CourseEntity implements Serializable {
 
@@ -28,10 +31,19 @@ public class CourseEntity implements Serializable {
     @Column(name = "level")
     private Integer level;
 
+    @Column(name = "premium", nullable = false)
+    private Boolean premium;
+
     @ManyToOne
     @JoinColumn(name = "id_topic", nullable = false, foreignKey = @ForeignKey(name = "FK_course_topic"))
     @JsonIgnore
-    private TopicEntity topic;
+    private TopicEntity topicEntity;
+
+    @JsonIgnore
+    @Transient
+    public static CourseEntity build(String name, String description, Integer level, boolean premium, TopicEntity topicEntity) {
+        return CourseEntity.builder().name(name).description(description).level(level).premium(premium).topicEntity(topicEntity).build();
+    }
 
     @JsonIgnore
     @Transient

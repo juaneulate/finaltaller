@@ -27,14 +27,10 @@ public class LoginEntity implements Serializable {
     @Column(name = "password", nullable = false)
     private String password;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
-    @JoinColumn(name = "idstudent")
-    private StudentEntity studentEntity;
-
     @JsonIgnore
     @Transient
-    public static LoginEntity build(String login, String password, StudentEntity studentEntity) {
-        return LoginEntity.builder().login(login).password(password).studentEntity(studentEntity).build();
+    public static LoginEntity build(String login, String password) {
+        return LoginEntity.builder().login(login).password(password).build();
     }
 
     @JsonIgnore

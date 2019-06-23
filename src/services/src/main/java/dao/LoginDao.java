@@ -2,6 +2,7 @@ package dao;
 
 import entity.LoginEntity;
 import entity.ProgressEntity;
+import entity.StudentEntity;
 
 import javax.inject.Named;
 import javax.persistence.TypedQuery;
@@ -22,14 +23,14 @@ public class LoginDao extends BaseDaoImpl {
         return resultList.isEmpty() ? Optional.empty() : Optional.of(resultList.get(0));
     }
 
-    public Optional<ProgressEntity> getPersonByUserName(String UserName) {
-        String hql = "SELECT le.personEntity " +
-                " FROM LoginEntity le" +
-                " where le.login = :userName ";
-        TypedQuery<ProgressEntity> query = em.createQuery(hql, ProgressEntity.class);
+    public Optional<StudentEntity> getStudentByUserName(String UserName) {
+        String hql = "SELECT se " +
+                " FROM StudentEntity se" +
+                " WHERE se.loginEntity.login = :userName ";
+        TypedQuery<StudentEntity> query = em.createQuery(hql, StudentEntity.class);
         query.setParameter("userName", UserName);
 
-        List<ProgressEntity> resultList = query.getResultList();
+        List<StudentEntity> resultList = query.getResultList();
         return resultList.isEmpty() ? Optional.empty() : Optional.of(resultList.get(0));
     }
 }

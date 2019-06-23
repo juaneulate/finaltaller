@@ -2,11 +2,9 @@ package rest;
 
 
 import com.google.gson.reflect.TypeToken;
-import dao.LoginDao;
 import dao.StudentDao;
 import dto.StudentLoginDto;
 import entity.LoginEntity;
-import entity.ProgressEntity;
 import entity.StudentEntity;
 import lombok.extern.jbosslog.JBossLog;
 import rest.configuration.path.RestPath;
@@ -17,9 +15,8 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.Serializable;
-import java.util.Optional;
 
-@Path(RestPath.REST_LOGIN)
+@Path(RestPath.REST_STUDENT)
 @Produces({MediaType.APPLICATION_JSON})
 @Consumes({MediaType.APPLICATION_JSON})
 @JBossLog
@@ -31,11 +28,11 @@ public class StudentRest implements Serializable {
 
     @GET
     @Path(RestPath.SAVE)
-    public Response restValidateLogin(String jsonBody) {
+    public Response restSave(String jsonBody) {
         try {
-            System.out.println("jsonLogin: "+jsonBody);
-            LoginEntity loginEntity = getLoginEntity(jsonBody, true);
-            studentDao.persist(loginEntity);
+            //System.out.println("jsonLogin: "+jsonBody);
+            StudentEntity studentEntity = getStudentEntity(jsonBody);
+            studentDao.persist(studentEntity);
             return Response.ok(true).build();
         } catch (Exception e) {
             // log.error(e);
@@ -43,13 +40,10 @@ public class StudentRest implements Serializable {
         }
     }
 
-
-
-
-    public LoginEntity getLoginEntity(String jsonBody, boolean b) {
+    public StudentEntity getStudentEntity(String jsonBody) {
         TypeToken<StudentLoginDto> typeToken = new TypeToken<StudentLoginDto>() {};
         StudentLoginDto studentLoginDto = JsonUtil.fromJson(jsonBody, typeToken);
-        StudentEntity studentEntity = StudentEntity.build(studentLoginDto.getFullname(), studentLoginDto.getAge());
-        return LoginEntity.build(studentLoginDto.getLogin(), studentLoginDto.getPassword(), studentEntity);
+        LoginEntity loginEntity = LoginEntity.build(studentLoginDto.getFullname(), studentLoginDto.getPassword());
+        return StudentEntity.build(studentLoginDto.getFullname(), studentLoginDto.getAge(), loginEntity);
     }
 }

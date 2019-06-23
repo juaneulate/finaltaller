@@ -15,6 +15,7 @@ public final class RestPath {
     public static final String REST_INFURA = "infura";
     public static final String REST_LOGIN = "login";
     public static final String REST_PERSON = "person";
+    public static final String GET_QUESTION = "get-question";
 
     //endregion
 

@@ -24,6 +24,9 @@ public class StudentEntity implements Serializable {
     @Column(name = "full_name", length = 100, nullable = false)
     private String fullName;
 
+    @Column(name = "age", nullable = false)
+    private int age;
+
     @ManyToOne
     @JoinColumn(name = "id_login", nullable = false, foreignKey = @ForeignKey(name = "FK_student_login"))
     @JsonIgnore
@@ -32,8 +35,8 @@ public class StudentEntity implements Serializable {
 
     @JsonIgnore
     @Transient
-    public static StudentEntity build(String fullName) {
-        return StudentEntity.builder().fullName(fullName).build();
+    public static StudentEntity build(String fullName, int age) {
+        return StudentEntity.builder().fullName(fullName).age(age).build();
     }
 
     @JsonIgnore

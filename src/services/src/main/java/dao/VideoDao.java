@@ -14,7 +14,7 @@ public class VideoDao extends BaseDaoImpl {
                 " FROM ChapterVideoEntity cc " +
                 "  where cc.chapter.id = :chapterId";
         TypedQuery<VideoEntity> query = em.createQuery(hql, VideoEntity.class);
-        query.setParameter("courseId", chapterId);
+        query.setParameter("chapterId", chapterId);
         return query.getResultList();
     }
 

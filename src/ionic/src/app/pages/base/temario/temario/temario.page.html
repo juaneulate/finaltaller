@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Temario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <div>
+      <ion-row>
+        <ion-col size="12" text-center>"La mejor forma de predecir el futuro es crearlo."</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" text-right>- Abraham Lincolm</ion-col>
+      </ion-row>
+    </div>
+  </ion-item>
+
+  <ion-list>
+    <ion-item *ngFor='let temario of temarios' (click)="onClick(temario.id)">
+      <ion-img [src]="temario.icon" slot="start" class="temario-img"></ion-img>
+      <ion-label>{{temario.title}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="acercade()" expand='full'>
+    Acerca de mis Cursos
+  </ion-button>
+</ion-content>

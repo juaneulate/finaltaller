@@ -1,0 +1,15 @@
+<ion-content>
+  <ion-slides #slider pager class="slide-main">
+    <ion-slide *ngFor="let slide of slides" [class]="slide.class">
+      <div class="slide-div">
+        <img [src]="slide.image" class="slide-image" />
+        <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+        <p [innerHTML]="slide.description"></p>
+        <ion-button color="primary" expand="full" *ngIf="slide.last" (click)="onClick()">
+          Continuar
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Acerca de</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <div>
+      <ion-row>
+        <ion-col size="12" text-center>"Nadie en la historia ha alcanzado sus metas en la tumbado cama; levantate, sal
+          afuera y experimenta."</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" text-right>- Juan Eulate(CEO)</ion-col>
+      </ion-row>
+    </div>
+  </ion-item>
+  <ion-item>
+    <ion-label>15 videos</ion-label>
+    <ion-badge color="primary" slot="end">25m41s</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      <p>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+      </p>
+      Nivel: Intermedio
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      <h2>Descripcion: </h2>
+      <p text-justify>
+        Interactuamos con las interfaces de aplicaciones
+      </p>
+      <p>
+        de las redes sociales, asi tendras beneficios.
+      </p>
+    </ion-label>
+  </ion-item>
+  <ion-item *ngFor='let message of messages'>
+    <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label>
+      <h3>{{message.name}}</h3>
+      <p>{{message.main}}</p>
+      <p>{{message.info}}</p>
+    </ion-label>
+  </ion-item>
+</ion-content>

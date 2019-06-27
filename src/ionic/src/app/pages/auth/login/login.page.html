@@ -1,0 +1,38 @@
+<ion-content>
+
+  <form [formGroup]="formLogin" (ngSubmit)="login()">
+    <ion-row>
+      <ion-col size="12">
+        <div class="logo-app">
+          <ion-img src="assets/img/login.png"></ion-img>
+          <h3 text-center>PIAAM</h3>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="10" offset="1">
+        <ion-input type="text" placeholder="Username" class="input-app" formControlName="username"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="10" offset="1">
+        <ion-input type="password" placeholder="Password" class="input-app" formControlName="password"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-button expand='full' color="dark" class="margin-10" type="submit">
+      <ion-icon name="log-in" slot="start"></ion-icon>
+      Entrar
+    </ion-button>
+  </form>
+  <ion-button expand='full' color='danger' class="margin-10">
+    <ion-icon name="logo-google" slot="start"></ion-icon>
+    Sign in with Google
+  </ion-button>
+  <ion-button expand='full' class="margin-10">
+    <ion-icon name="logo-facebook" slot="start"></ion-icon>
+    Sign in with Facebook
+  </ion-button>
+  <div text-center>
+    <a class="margin-10" routerLink="/register">Registrate aqui</a> si no quiere vincular sus cuentas.
+  </div>
+</ion-content>

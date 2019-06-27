@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Curso
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <div>
+      <ion-row>
+        <ion-col size="12" text-center>"Saber y saberlo demostrar es valer dos veces"</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" text-right>- Baltazar Gracian</ion-col>
+      </ion-row>
+    </div>
+  </ion-item>
+  <ion-list>
+    <ion-item *ngFor='let curso of cursos' (click)="go(curso.id)">
+      <ion-img [src]="curso.video" slot="start" class="curso-img"></ion-img>
+      <ion-label>
+        {{curso.title}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

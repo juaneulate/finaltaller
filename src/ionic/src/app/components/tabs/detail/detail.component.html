@@ -1,0 +1,11 @@
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Introduction</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let capitulo of capitulos">
+      <ion-label>{{capitulo.title}}</ion-label>
+      <ion-badge color="primary" slot="end">{{capitulo.duration}}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>

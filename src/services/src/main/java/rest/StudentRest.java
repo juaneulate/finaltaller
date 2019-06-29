@@ -26,7 +26,7 @@ public class StudentRest implements Serializable {
     @Inject
     private StudentDao studentDao;
 
-    @GET
+    @POST
     @Path(RestPath.SAVE)
     public Response restSave(String jsonBody) {
         try {
@@ -43,7 +43,7 @@ public class StudentRest implements Serializable {
     public StudentEntity getStudentEntity(String jsonBody) {
         TypeToken<StudentLoginDto> typeToken = new TypeToken<StudentLoginDto>() {};
         StudentLoginDto studentLoginDto = JsonUtil.fromJson(jsonBody, typeToken);
-        LoginEntity loginEntity = LoginEntity.build(studentLoginDto.getFullname(), studentLoginDto.getPassword());
+        LoginEntity loginEntity = LoginEntity.build(studentLoginDto.getLogin(), studentLoginDto.getPassword());
         return StudentEntity.build(studentLoginDto.getFullname(), studentLoginDto.getAge(), loginEntity);
     }
 }

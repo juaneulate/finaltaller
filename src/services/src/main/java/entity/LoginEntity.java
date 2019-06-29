@@ -19,6 +19,7 @@ public class LoginEntity implements Serializable {
     @Id
     @GeneratedValue(generator = EntityPath.LOGIN_GENERATOR, strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = EntityPath.LOGIN_GENERATOR, sequenceName = EntityPath.LOGIN_SEQUENCE, allocationSize = 1)
+    @Column(name = "id_login", nullable = false)
     private long id;
 
     @Column(name = "login", nullable = false)

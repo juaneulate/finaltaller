@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators, FormBuilder } from '@angular/forms';
 import { NavController } from '@ionic/angular';
+import { QuestionsService } from 'src/app/services/questions/questions.service';
 
 @Component({
   selector: 'app-questions',
@@ -10,16 +11,12 @@ import { NavController } from '@ionic/angular';
 export class QuestionsPage implements OnInit {
 
   formQuestions: any = {};
-  questions = [
-    { question: 'Conoces las herramientas de Word, Excel y Powerpoint?', name: 'qone' },
-    { question: 'Sabes que son las redes sociales y como se usan?', name: 'qtwo' },
-    { question: 'Conoces lo que es un navegador web?', name: 'qthree' },
-    { question: 'Conoces lo que es un correo electronico o e-mail?', name: 'qfour' },
-  ];
+  questions = [];
 
   constructor(
     private formBuilder: FormBuilder,
-    private navCtrl: NavController
+    private navCtrl: NavController,
+    private questionsService: QuestionsService
   ) { }
 
   ngOnInit() {
@@ -29,9 +26,12 @@ export class QuestionsPage implements OnInit {
       qthree: new FormControl('', { validators: Validators.required }),
       qfour: new FormControl('', { validators: Validators.required }),
     });
+
+    this.questions = this.questionsService.getQuestion();
   }
 
   save() {
+    localStorage.setItem('isFirstTime', 'not');
     this.navCtrl.navigateRoot('/base');
   }
 }

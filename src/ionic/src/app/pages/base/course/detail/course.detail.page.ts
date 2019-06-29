@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
+import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
+import { CursosService } from 'src/app/services/cursos/cursos.service';
 
 @Component({
   selector: 'app-course-detail',
@@ -11,9 +13,7 @@ export class CourseDetailPage implements OnInit {
 
 
   pathImages = 'assets/cursos/';
-  video = {
-    path: this.pathImages + 'course_one.gif',
-  };
+  video: any;
 
   section = '';
 
@@ -24,13 +24,15 @@ export class CourseDetailPage implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
+    private youtube: YoutubeVideoPlayer,
+    private dom: DomSanitizer,
+    private curssoService: CursosService
   ) { }
 
   ngOnInit() {
     this.activatedRoute.queryParams.subscribe(params => {
       this.id = JSON.parse(params['id']);
       this.section = params['section'];
-
       this.details = [
         { title: this.section + ' 1', duration: '6m54s' },
         { title: this.section + ' 2', duration: '4m1s' },
@@ -41,9 +43,18 @@ export class CourseDetailPage implements OnInit {
         { title: this.section + ' 7', duration: '52m21ss' },
         { title: this.section + ' 8', duration: '26m9s' },
       ];
-
-      this.video.path = this.getVideo(this.id);
+      this.video = this.curssoService.getVideo(this.id);
+      this.showVideo = true;
     });
+  }
+
+  fullScreen() {
+    this.youtube.openVideo(this.video.id)
+  }
+  secureUrl(url: string) {
+    const result = this.dom.bypassSecurityTrustResourceUrl(url);
+    console.log(result);
+    return result;
   }
 
   private getVideo(id: number) {

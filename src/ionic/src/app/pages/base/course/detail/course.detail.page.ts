@@ -31,8 +31,10 @@ export class CourseDetailPage implements OnInit {
 
   ngOnInit() {
     this.activatedRoute.queryParams.subscribe(params => {
-      this.id = JSON.parse(params['id']);
-      this.section = params['section'];
+      console.log(params);
+
+      this.id = JSON.parse(params.id);
+      this.section = params.section;
       this.details = [
         { title: this.section + ' 1', duration: '6m54s' },
         { title: this.section + ' 2', duration: '4m1s' },
@@ -49,7 +51,7 @@ export class CourseDetailPage implements OnInit {
   }
 
   fullScreen() {
-    this.youtube.openVideo(this.video.id)
+    this.youtube.openVideo(this.video.id);
   }
   secureUrl(url: string) {
     const result = this.dom.bypassSecurityTrustResourceUrl(url);

@@ -10,10 +10,10 @@
 </ion-header>
 
 <ion-content>
-  <ion-row>
+  <ion-row *ngIf="showStudent">
     <ion-col size="10" offset="1">
       <h3 text-center>
-        Holis Rolicito que bueno verte!
+        Holis {{student.fullName}} que bueno verte!
       </h3>
       <p>
         Te recomendamos que inicies, con estos cursos

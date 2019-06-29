@@ -19,6 +19,7 @@ public class StudentEntity implements Serializable {
     @Id
     @GeneratedValue(generator = EntityPath.STUDENT_GENERATOR, strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = EntityPath.STUDENT_GENERATOR, sequenceName = EntityPath.STUDENT_SEQUENCE, allocationSize = 1)
+    @Column(name = "id_student", nullable = false)
     private long id;
 
     @Column(name = "full_name", length = 100, nullable = false)
@@ -27,7 +28,7 @@ public class StudentEntity implements Serializable {
     @Column(name = "age", nullable = false)
     private int age;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
     @JoinColumn(name = "id_login", nullable = false, foreignKey = @ForeignKey(name = "FK_student_login"))
     @JsonIgnore
     private LoginEntity loginEntity;

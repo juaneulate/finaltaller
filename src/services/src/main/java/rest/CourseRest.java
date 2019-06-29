@@ -13,7 +13,9 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Properties;
 
 @Path(RestPath.REST_COURSE)
 @Produces({MediaType.APPLICATION_JSON})
@@ -24,6 +26,23 @@ public class CourseRest implements Serializable {
 
     @Inject
     private CourseDao courseDao;
+
+    @GET
+    @Path(RestPath.GET_COURSE_TOPIC)
+    public Response restGetCourseTopic(String jsonBody) {
+        try {
+
+
+
+            List<CourseEntity> courseListFree = courseDao.getCourseListFree();
+            return Response.ok(courseListFree).build();
+        } catch (Exception e) {
+            // log.error(e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e.getMessage()).build();
+        }
+    }
+
+
 
     @GET
     @Path(RestPath.GET_COURSE_FREE)

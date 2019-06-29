@@ -22,7 +22,9 @@ public final class RestPath {
     public static final String REST_CHAPTER = "chapter";
     public static final String REST_VIDEO = "video";
     public static final String GET_COURSE_FREE = "get-course-free";
+    public static final String GET_COURSE_TOPIC = "get-course-topic";
     public static final String GET_COURSE_PREMIUM = "get-course-premium";
+    public static final String REST_TOPIC = "topic";
 
     //endregion
 

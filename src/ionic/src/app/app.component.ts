@@ -13,7 +13,6 @@ export class AppComponent {
     { title: 'Home', url: '/base', icon: 'home' },
     { title: 'Temario', url: '/temario', icon: 'list-box' },
     { title: 'Mis cursos', url: '/cursos', icon: 'contact' },
-    { title: 'Logout', url: '/logout', icon: 'log-out' },
   ];
 
   constructor(

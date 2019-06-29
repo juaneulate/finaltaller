@@ -49,12 +49,7 @@ export class MainSliderPage implements OnInit {
     ];
   }
 
-  onChange() {
-    this.slider.getActiveIndex().then(data => {
-    });
-  }
-
   onClick() {
-    this.navCtrl.navigateRoot('/login');
+    this.navCtrl.navigateRoot('/questions');
   }
 }

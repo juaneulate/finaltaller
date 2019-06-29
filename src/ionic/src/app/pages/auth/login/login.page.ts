@@ -21,9 +21,17 @@ export class LoginPage implements OnInit {
       username: new FormControl('', { validators: Validators.required }),
       password: new FormControl('', { validators: Validators.required }),
     });
+
+    this.logout();
   }
 
   login() {
-    return this.navCtrl.navigateRoot('/base');
+    const url = '/base';
+    localStorage.setItem('isLoggedIn', 'true');
+    return this.navCtrl.navigateRoot(url);
+  }
+
+  logout() {
+    localStorage.clear();
   }
 }

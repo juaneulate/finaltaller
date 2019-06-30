@@ -1,14 +1,14 @@
 <ion-content>
+  <ion-row>
+    <ion-col size="12">
+      <div class="logo-app">
+        <ion-img src="assets/img/login.png"></ion-img>
+        <h3 text-center>PIAAM</h3>
+      </div>
+    </ion-col>
+  </ion-row>
 
   <form [formGroup]="formLogin" (ngSubmit)="login()">
-    <ion-row>
-      <ion-col size="12">
-        <div class="logo-app">
-          <ion-img src="assets/img/login.png"></ion-img>
-          <h3 text-center>PIAAM</h3>
-        </div>
-      </ion-col>
-    </ion-row>
     <ion-row>
       <ion-col size="10" offset="1">
         <ion-input type="text" placeholder="Username" class="input-app" formControlName="username"></ion-input>
@@ -23,12 +23,20 @@
       <ion-icon name="log-in" slot="start"></ion-icon>
       Entrar
     </ion-button>
+    <ion-item *ngIf="existFinger">
+      <ion-toggle slot="start" formControlName="finger"></ion-toggle>
+      <ion-label>Utilizar huella digital</ion-label>
+    </ion-item>
   </form>
-  <ion-button expand='full' color='danger' class="margin-10">
+  <ion-button *ngIf="showFinger" expand="full" (click)="go(urlFLogin)" color="secondary" class="margin-10">
+    <ion-icon name="log-in" slot="start"></ion-icon>
+    Iniciar Sesion con Huella digital
+  </ion-button>
+  <ion-button expand='block' color='danger' class="margin-10">
     <ion-icon name="logo-google" slot="start"></ion-icon>
     Sign in with Google
   </ion-button>
-  <ion-button expand='full' class="margin-10">
+  <ion-button expand='block' class="margin-10">
     <ion-icon name="logo-facebook" slot="start"></ion-icon>
     Sign in with Facebook
   </ion-button>

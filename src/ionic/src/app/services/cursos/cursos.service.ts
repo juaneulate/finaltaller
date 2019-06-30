@@ -18,6 +18,18 @@ export class CursosService extends BaseService {
     { code: 9, url: 'https://www.youtube.com/embed/ZMKJApsjLpw', id: 'ZMKJApsjLpw' },
   ];
 
+  cursos = [
+    { code: 1, title: 'Curso 1', description: 'Description 1' },
+    { code: 2, title: 'Curso 2', description: 'Description 2' },
+    { code: 3, title: 'Curso 3', description: 'Description 3' },
+    { code: 4, title: 'Curso 4', description: 'Description 4' },
+    { code: 5, title: 'Curso 5', description: 'Description 5' },
+    { code: 6, title: 'Curso 6', description: 'Description 6' },
+    { code: 7, title: 'Curso 7', description: 'Description 7' },
+    { code: 8, title: 'Curso 8', description: 'Description 8' },
+    { code: 9, title: 'Curso 9', description: 'Description 9' },
+  ];
+
   constructor(
     private http: HTTP,
   ) {
@@ -33,6 +45,10 @@ export class CursosService extends BaseService {
       }
     });
     return result;
+  }
+
+  list() {
+    return this.cursos;
   }
 
   getRecomendados(office, RRSS, navegador, email) {

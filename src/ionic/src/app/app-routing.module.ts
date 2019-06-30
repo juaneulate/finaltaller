@@ -15,6 +15,8 @@ const routes: Routes = [
   { path: 'temario', loadChildren: './pages/base/temario/temario/temario.module#TemarioPageModule' },
   { path: 'cursos', loadChildren: './pages/base/curso/curso/curso.module#CursoPageModule' },
   { path: 'acercade', loadChildren: './pages/base/temario/acercade/acercade/acercade.module#AcercadePageModule' },
+  { path: 'flogin', loadChildren: './pages/auth/flogin/flogin/flogin.module#FloginPageModule' },
+  { path: 'courseList', loadChildren: './pages/base/course/list/list/list.module#ListPageModule' },
 ];
 
 @NgModule({

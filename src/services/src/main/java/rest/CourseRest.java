@@ -15,6 +15,7 @@ import javax.ws.rs.core.Response;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 import java.util.Properties;
 
 @Path(RestPath.REST_COURSE)
@@ -29,19 +30,20 @@ public class CourseRest implements Serializable {
 
     @GET
     @Path(RestPath.GET_COURSE_TOPIC)
-    public Response restGetCourseTopic(String jsonBody) {
+    public Response restGetCourseTopic(@QueryParam(RestPath.TOPIC_ID) long topicId) {
         try {
-
-
-
-            List<CourseEntity> courseListFree = courseDao.getCourseListFree();
-            return Response.ok(courseListFree).build();
+            //
+            Optional<CourseEntity> courseByTopicOpt = courseDao.getCourseListByTopic(topicId);
+            if (courseByTopicOpt.isPresent()) {
+                return Response.ok(courseByTopicOpt.get()).build();
+            } else {
+                return Response.status(Response.Status.NOT_FOUND).build();
+            }
         } catch (Exception e) {
-            // log.error(e);
+//           log.error(e);
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e.getMessage()).build();
         }
     }
-
 
 
     @GET
@@ -67,6 +69,7 @@ public class CourseRest implements Serializable {
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e.getMessage()).build();
         }
     }
+
     @GET
     @Path(RestPath.LIST)
     public Response restGetCourseList() {

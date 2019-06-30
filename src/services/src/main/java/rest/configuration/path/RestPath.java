@@ -24,6 +24,7 @@ public final class RestPath {
     public static final String GET_COURSE_FREE = "get-course-free";
     public static final String GET_COURSE_TOPIC = "get-course-topic";
     public static final String GET_COURSE_PREMIUM = "get-course-premium";
+    public static final String TOPIC_ID = "topic_id";
     public static final String REST_TOPIC = "topic";
 
     //endregion
@@ -68,6 +69,7 @@ public final class RestPath {
     public static final String USERNAME = "username";
     public static final String PASSWORD = "password";
     public static final String COURSE = "course";
+    public static final String COURSE_ID = "course_id";
     public static final String CHAPTER = "chapter";
 
     public static final String AGE = "age";

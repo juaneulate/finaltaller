@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
 import { HTTP } from '@ionic-native/http/ngx';
+import { AndroidFingerprintAuth } from '@ionic-native/android-fingerprint-auth/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { HTTP } from '@ionic-native/http/ngx';
   providers: [
     StatusBar,
     YoutubeVideoPlayer,
+    AndroidFingerprintAuth,
     HTTP,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }

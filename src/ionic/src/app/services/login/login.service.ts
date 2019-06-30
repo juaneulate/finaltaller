@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BaseService } from '../base/base.service';
-import { HTTP } from '@ionic-native/http/ngx';
+import { HTTP, HTTPResponse } from '@ionic-native/http/ngx';
+import { parseHttpResponse } from 'selenium-webdriver/http';
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +23,15 @@ export class LoginService extends BaseService {
     };
 
     return this.http.get(this.getFullUrl() + 'validate', params, {});
+  }
+
+  loginFake(username, password) {
+    return new Promise<HTTPResponse>((resolve, reject) => {
+      const result = {
+        data: 'true',
+      } as HTTPResponse;
+      resolve(result);
+    });
   }
 
   getStudent(username) {

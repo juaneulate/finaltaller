@@ -11,7 +11,7 @@
   <ion-item>
     <div>
       <ion-row>
-        <ion-col size="12" text-center>"Estudiar te abre puertas, iniciemos"</ion-col>
+        <ion-col size="12" text-center>"Para ser bueno en algo, primero hay que equivocarse muchas veces."</ion-col>
       </ion-row>
       <ion-row>
         <ion-col size="12" text-right>- Carla con k(CTO)</ion-col>
@@ -34,11 +34,14 @@
         <ion-list-header>
           <ion-label>Introduction</ion-label>
         </ion-list-header>
-        <ion-item *ngFor="let detail of details">
+        <ion-item *ngFor="let detail of details" (click)="getVideo(detail.id)">
           <ion-label>{{detail.title}}</ion-label>
           <ion-badge color="primary" slot="end">{{detail.duration}}</ion-badge>
         </ion-item>
       </ion-list>
+      <ion-button (click)="acercade()" expand='full'>
+        Acerca de mis Cursos
+      </ion-button>
     </ion-card-content>
   </ion-card>
 </ion-content>

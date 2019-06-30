@@ -37,6 +37,6 @@ export class TemarioPage implements OnInit {
       }
     };
 
-    this.navCtrl.navigateForward('/course', navOptions);
+    this.navCtrl.navigateForward('/courseList', navOptions);
   }
 }

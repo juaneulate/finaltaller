@@ -12,10 +12,10 @@ export class TemarioPage implements OnInit {
   pathImages = 'assets/temario/';
 
   temarios = [
-    { title: 'Diseño', icon: this.pathImages + 'diseno.png', id: 1 },
-    { title: 'Oficina', icon: this.pathImages + 'oficina.jpg', id: 2 },
-    { title: 'Oratoria', icon: this.pathImages + 'oratoria.jpg', id: 3 },
-    { title: 'Informatica', icon: this.pathImages + 'informatica.png', id: 4 }
+    { title: 'Paquetes de Oficina', icon: this.pathImages + 'diseno.png', id: 1 },
+    { title: 'Redes Sociales', icon: this.pathImages + 'oficina.jpg', id: 2 },
+    { title: 'Marketing', icon: this.pathImages + 'oratoria.jpg', id: 3 },
+    { title: 'Google', icon: this.pathImages + 'informatica.png', id: 4 }
   ];
 
   constructor(

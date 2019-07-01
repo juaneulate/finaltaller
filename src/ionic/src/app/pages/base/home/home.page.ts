@@ -4,6 +4,7 @@ import { NavigationOptions } from '@ionic/angular/dist/providers/nav-controller'
 import { LoginService } from 'src/app/services/login/login.service';
 import { ErrorService } from 'src/app/services/error/error.service';
 import { AlertService } from 'src/app/services/alert/alert.service';
+import { CursosService } from 'src/app/services/cursos/cursos.service';
 
 @Component({
   selector: 'app-home',
@@ -26,17 +27,9 @@ export class HomePage implements OnInit {
     { id: 3, title: 'Curso tema three', img: this.pathImages + 'course_three.gif' },
   ];
 
-  freeVideos = [
-    { id: 4, title: 'Curso tema four', img: this.pathImages + 'course_four.gif' },
-    { id: 5, title: 'Curso tema five', img: this.pathImages + 'course_five.gif' },
-    { id: 6, title: 'Curso tema six', img: this.pathImages + 'course_six.gif' },
-  ];
+  freeVideos: any[];
 
-  premiumVideos = [
-    { id: 7, title: 'Curso tema seven', img: this.pathImages + 'course_seven.gif' },
-    { id: 8, title: 'Curso tema eight', img: this.pathImages + 'course_eight.gif' },
-    { id: 9, title: 'Curso tema nine', img: this.pathImages + 'course_nine.gif' },
-  ];
+  premiumVideos: any[];
 
   student: any;
 
@@ -46,6 +39,7 @@ export class HomePage implements OnInit {
     private loginService: LoginService,
     private errorService: ErrorService,
     private alertService: AlertService,
+    private cursosService: CursosService,
   ) { }
 
   ngOnInit(): void {
@@ -64,8 +58,60 @@ export class HomePage implements OnInit {
           this.errorService.consoleLog(error);
           this.errorService.alertError(error);
         });
+
+      this.cursosService.listFree()
+        .then(data => {
+          this.freeVideos = JSON.parse(data.data);
+          this.freeVideos.forEach(element => {
+            element.img = this.getImage(element.id);
+          });
+        });
+
+      this.cursosService.listPremium()
+        .then(data => {
+          this.premiumVideos = JSON.parse(data.data);
+          this.premiumVideos.forEach(element => {
+            element.img = this.getImage(element.id);
+          });
+        });
     });
+
   }
+
+  private getImage(id) {
+    var resultPath = this.pathImages + '';
+    switch (id) {
+      case 1:
+        resultPath += 'course_one.gif';
+        break;
+      case 2:
+        resultPath += 'course_two.gif';
+        break;
+      case 3:
+        resultPath += 'course_three.gif';
+        break;
+      case 4:
+        resultPath += 'course_four.gif';
+        break;
+      case 5:
+        resultPath += 'course_five.gif';
+        break;
+      case 6:
+        resultPath += 'course_six.gif';
+        break;
+      case 7:
+        resultPath += 'course_seven.gif';
+        break;
+      case 8:
+        resultPath += 'course_eight.gif';
+        break;
+      default:
+        resultPath += 'course_five.gif';
+        break;
+    }
+    console.log(id);
+    return resultPath;
+  };
 
   go(id: number) {
     const navOptions: NavigationOptions = {

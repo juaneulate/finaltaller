@@ -51,6 +51,23 @@ export class CursosService extends BaseService {
     return this.cursos;
   }
 
+  listCursos(idTopic: number) {
+    // Initialize Params Object
+    const params = {
+      topic_id: idTopic.toString()
+    };
+
+    return this.http.get(this.getFullUrl() + 'get-course-topic', params, {});
+  }
+
+  listFree() {
+    return this.http.get(this.getFullUrl() + 'get-course-free', {}, {});
+  }
+
+  listPremium() {
+    return this.http.get(this.getFullUrl() + 'get-course-premium', {}, {});
+  }
+
   getRecomendados(office, RRSS, navegador, email) {
     // Initialize Params Object
     const params = {

@@ -21,17 +21,30 @@ export class QuestionsPage implements OnInit {
 
   ngOnInit() {
     this.formQuestions = this.formBuilder.group({
-      qone: new FormControl('', { validators: Validators.required }),
-      qtwo: new FormControl('', { validators: Validators.required }),
-      qthree: new FormControl('', { validators: Validators.required }),
-      qfour: new FormControl('', { validators: Validators.required }),
+      office: new FormControl('false', { validators: Validators.required }),
+      RRSS: new FormControl('false', { validators: Validators.required }),
+      marketing: new FormControl('false', { validators: Validators.required }),
+      Google: new FormControl('false', { validators: Validators.required }),
     });
 
     this.questions = this.questionsService.getQuestion();
   }
 
+  get f() {
+    return this.formQuestions.controls;
+  }
+
   save() {
     localStorage.setItem('isFirstTime', 'not');
+
+    const office = this.f.office.value;
+    const RRSS = this.f.RRSS.value;
+    const marketing = this.f.marketing.value;
+    const Google = this.f.Google.value;
+    const logge = [office, RRSS, marketing, Google];
+
+    console.log(logge);
+
     this.navCtrl.navigateRoot('/base');
   }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CursosService } from 'src/app/services/cursos/cursos.service';
 import { ActivatedRoute } from '@angular/router';
-import { NavController } from '@ionic/angular/';
+import { NavController, Platform } from '@ionic/angular/';
 import { NavigationOptions } from '@ionic/angular/dist/providers/nav-controller';
 
 @Component({
@@ -18,13 +18,19 @@ export class ListPage implements OnInit {
     private cursosService: CursosService,
     private activatedRoute: ActivatedRoute,
     private navCtrl: NavController,
+    private platform: Platform,
   ) { }
 
   ngOnInit() {
     this.activatedRoute.queryParams.subscribe(params => {
-      console.log(params);
       this.id = JSON.parse(params.id);
-      this.cursos = this.cursosService.list();
+      this.platform.ready().then(dataP => {
+        this.cursosService.listCursos(this.id)
+          .then(data => {
+            this.cursos = JSON.parse(data.data);
+            console.log(this.cursos);
+          });
+      });
     });
   }
 

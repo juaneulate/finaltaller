@@ -1,17 +1,19 @@
 <ion-content>
   <ion-list>
     <form [formGroup]="formQuestions" (ngSubmit)="save()">
-      <ion-radio-group *ngFor="let question of questions">
+      <ion-radio-group *ngFor="let question of questions" [formControlName]="question.name">
         <ion-list-header>
           <ion-label>{{question.question}}</ion-label>
         </ion-list-header>
+        <ion-list>  
+        </ion-list>
         <ion-item>
           <ion-label>SI</ion-label>
-          <ion-radio slot="start" value="true" checked [name]="question.name"></ion-radio>
+          <ion-radio slot="start" value="true"></ion-radio>
         </ion-item>
         <ion-item>
           <ion-label>NO</ion-label>
-          <ion-radio slot="start" value="false" color="danger" [name]="question.name"></ion-radio>
+          <ion-radio slot="start" value="false" color="danger"></ion-radio>
         </ion-item>
       </ion-radio-group>
 

@@ -3,7 +3,8 @@ import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
 import { CursosService } from 'src/app/services/cursos/cursos.service';
-import { NavController } from '@ionic/angular';
+import { NavController, Platform } from '@ionic/angular';
+import { VideoService } from 'src/app/services/video/video.service';
 
 @Component({
   selector: 'app-course-detail',
@@ -11,17 +12,13 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./course.detail.page.scss'],
 })
 export class CourseDetailPage implements OnInit {
-
-
   pathImages = 'assets/cursos/';
   video: any;
-
-  section = '';
-
-  details = [];
+  curso: any;
   showVideo = false;
-  icon = '';
+  showVideos = false;
   id: number;
+  videos: any[];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -29,6 +26,8 @@ export class CourseDetailPage implements OnInit {
     private dom: DomSanitizer,
     private curssoService: CursosService,
     private navCtrl: NavController,
+    private platform: Platform,
+    private videoService: VideoService,
   ) { }
 
   ngOnInit() {
@@ -36,19 +35,30 @@ export class CourseDetailPage implements OnInit {
       console.log(params);
 
       this.id = JSON.parse(params.id);
-      this.section = params.section;
-      this.details = [
-        { id: 1, title: this.section + ' 1', duration: '6m54s' },
-        { id: 2, title: this.section + ' 2', duration: '4m1s' },
-        { id: 3, title: this.section + ' 3', duration: '6m34s' },
-        { id: 4, title: this.section + ' 4', duration: '7m2s' },
-        { id: 5, title: this.section + ' 5', duration: '8m35s' },
-        { id: 6, title: this.section + ' 6', duration: '13m9s' },
-        { id: 7, title: this.section + ' 7', duration: '52m21ss' },
-        { id: 8, title: this.section + ' 8', duration: '26m9s' },
-      ];
-      this.video = this.curssoService.getVideo(this.id);
-      this.showVideo = true;
+
+      this.platform.ready()
+        .then(dataP => {
+          this.videoService.list(this.id).then(data => {
+            this.videos = JSON.parse(data.data);
+            let first = true;
+            this.videos.forEach(element => {
+              const splited = element.dir.split(',');
+              element.url = splited[0];
+              element.code = splited[1];
+
+              if (first) {
+                this.video = {
+                  url: element.url,
+                  code: element.code
+                };
+                this.showVideo = true;
+                first = false;
+              }
+            });
+            this.showVideos = true;
+            console.log(this.videos);
+          });
+        });
     });
   }
 
@@ -66,9 +76,14 @@ export class CourseDetailPage implements OnInit {
     return result;
   }
 
-  getVideo(id) {
-    this.video = this.curssoService.getVideo(id);
-    console.log(this.video);
+  getVideo(id: number) {
+    this.videos.forEach(element => {
+      if (element.id === id) {
+        this.video = {
+          url: element.url,
+          code: element.code
+        };
+      }
+    })
   }
-
 }

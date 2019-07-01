@@ -39,7 +39,7 @@ export class FloginPage implements OnInit {
 
   serviceLogin(username, password) {
     const url = '/base';
-    this.loginService.loginFake(username, password)
+    this.loginService.login(username, password)
       .then(data => {
         const isLogin = JSON.parse(data.data);
         if (isLogin) {

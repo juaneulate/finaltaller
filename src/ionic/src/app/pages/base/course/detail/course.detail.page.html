@@ -30,13 +30,13 @@
       <div text-justify>
         aksndlaksjdjalsfnmf adkamsk ldjalsm masl dmalskd asdl askd mmasmd asmdlasdmasdasdm asmd asdmalsmd
       </div>
-      <ion-list>
+      <ion-list *ngIf='showVideos'>
         <ion-list-header>
           <ion-label>Introduction</ion-label>
         </ion-list-header>
-        <ion-item *ngFor="let detail of details" (click)="getVideo(detail.id)">
-          <ion-label>{{detail.title}}</ion-label>
-          <ion-badge color="primary" slot="end">{{detail.duration}}</ion-badge>
+        <ion-item *ngFor="let video of videos" (click)="getVideo(video.id)">
+          <ion-label>{{video.name}}</ion-label>
+          <ion-badge color="primary" slot="end">{{video.code}}</ion-badge>
         </ion-item>
       </ion-list>
       <ion-button (click)="acercade()" expand='full'>

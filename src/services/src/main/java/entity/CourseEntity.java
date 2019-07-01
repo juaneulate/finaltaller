@@ -8,19 +8,20 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 
+@Builder
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(of = {"id_course"})
+@EqualsAndHashCode(of = {"id"})
 @Entity
-@Builder
 @Table(name = EntityPath.COURSE)
 public class CourseEntity implements Serializable {
 
     @Id
     @GeneratedValue(generator = EntityPath.COURSE_GENERATOR, strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = EntityPath.COURSE_GENERATOR, sequenceName = EntityPath.COURSE_SEQUENCE, allocationSize = 1)
-    private long id_course;
+    @Column(name = "id_course", nullable = false)
+    private long id;
 
     @Column(name = "name")
     private String name;
@@ -34,9 +35,8 @@ public class CourseEntity implements Serializable {
     @Column(name = "premium", nullable = false)
     private Boolean premium;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @JoinColumn(name = "id_topic", nullable = false, foreignKey = @ForeignKey(name = "FK_course_topic"))
-    @JsonIgnore
     private TopicEntity id_topic;
 
     @JsonIgnore
@@ -48,7 +48,7 @@ public class CourseEntity implements Serializable {
     @JsonIgnore
     @Transient
     public boolean isNew() {
-        return id_course == 0;
+        return id == 0;
     }
 
 }

@@ -50,6 +50,7 @@ public class CourseRest implements Serializable {
     @Path(RestPath.GET_COURSE_FREE)
     public Response restGetCourseFree() {
         try {
+            log.info("restGetCourseFree");
             List<CourseEntity> courseListFree = courseDao.getCourseListFree();
             return Response.ok(courseListFree).build();
         } catch (Exception e) {

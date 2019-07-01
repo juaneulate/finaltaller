@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(of = {"id_video"})
+@EqualsAndHashCode(of = {"id"})
 @Entity
 @Table(name = EntityPath.VIDEO)
 public class VideoEntity implements Serializable {
@@ -19,7 +19,8 @@ public class VideoEntity implements Serializable {
     @Id
     @GeneratedValue(generator = EntityPath.VIDEO_GENERATOR, strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = EntityPath.VIDEO_GENERATOR, sequenceName = EntityPath.VIDEO_SEQUENCE, allocationSize = 1)
-    private long id_video;
+    @Column(name = "id_video", nullable = false)
+    private long id;
 
     @Column(name = "name", nullable = false)
     private String name;
@@ -41,7 +42,7 @@ public class VideoEntity implements Serializable {
     @JsonIgnore
     @Transient
     public boolean isNew() {
-        return id_video == 0;
+        return id == 0;
     }
 
 }

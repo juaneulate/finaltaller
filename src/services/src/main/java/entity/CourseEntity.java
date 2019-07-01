@@ -9,6 +9,8 @@ import java.io.Serializable;
 
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode(of = {"id_course"})
 @Entity
 @Builder

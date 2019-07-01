@@ -30,15 +30,11 @@ public class CourseRest implements Serializable {
 
     @GET
     @Path(RestPath.GET_COURSE_BY_TOPICS)
-    public Response restGetCourseTopicList(@QueryParam(RestPath.TOPIC_LIST) List <String> topicList) {
+    public Response restGetCourseTopicList(@QueryParam(RestPath.TOPIC_LIST) List<String> topicList) {
         try {
             //
-            Optional<CourseEntity> courseByTopicOpt = courseDao.getCourseListByTopicList(topicList);
-            if (courseByTopicOpt.isPresent()) {
-                return Response.ok(courseByTopicOpt.get()).build();
-            } else {
-                return Response.status(Response.Status.NOT_FOUND).build();
-            }
+            List<CourseEntity> courseByTopicList = courseDao.getCourseListByTopicList(topicList);
+            return Response.ok(courseByTopicList).build();
         } catch (Exception e) {
 //           log.error(e);
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e.getMessage()).build();
@@ -50,12 +46,11 @@ public class CourseRest implements Serializable {
     public Response restGetCourseTopic(@QueryParam(RestPath.TOPIC_ID) long topicId) {
         try {
             //
-            Optional<CourseEntity> courseByTopicOpt = courseDao.getCourseListByTopic(topicId);
-            if (courseByTopicOpt.isPresent()) {
-                return Response.ok(courseByTopicOpt.get()).build();
-            } else {
-                return Response.status(Response.Status.NOT_FOUND).build();
-            }
+            List<CourseEntity> courseByTopic = courseDao.getCourseListByTopic(topicId);
+
+            return Response.ok(courseByTopic).build();
+
+
         } catch (Exception e) {
 //           log.error(e);
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e.getMessage()).build();

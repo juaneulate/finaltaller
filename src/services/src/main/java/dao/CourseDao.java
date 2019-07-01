@@ -48,7 +48,7 @@ public class CourseDao extends BaseDaoImpl {
     public List<CourseEntity>  getCourseListByTopicList(List <String> topicList) {
         String hql_topic = "SELECT te.id " +
                 " FROM TopicEntity te " +
-                " WHERE te.name in:topicList ";
+                " WHERE te.description in:topicList";
 
         TypedQuery<TopicEntity> topick_query = em.createQuery(hql_topic, TopicEntity.class);
         topick_query.setParameter("topicList", topicList);

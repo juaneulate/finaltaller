@@ -1,6 +1,7 @@
 package dao;
 
 import entity.CourseEntity;
+import entity.TopicEntity;
 import entity.QuestionEntity;
 
 import javax.inject.Named;
@@ -35,24 +36,29 @@ public class CourseDao extends BaseDaoImpl {
         return query.getResultList();
     }
 
-    public Optional<CourseEntity>  getCourseListByTopic(long topicId) {
+    public List<CourseEntity>  getCourseListByTopic(long topicId) {
         String hql = "SELECT cc " +
                 " FROM CourseEntity cc " +
                 " WHERE cc.id_topic.id=:topicId ";
         TypedQuery<CourseEntity> query = em.createQuery(hql, CourseEntity.class);
         query.setParameter("topicId", topicId);
-        List<CourseEntity> resultList = query.getResultList();
-        return resultList.isEmpty() ? Optional.empty() : Optional.of(resultList.get(0));
+        return query.getResultList();
     }
 
-    public Optional<CourseEntity>  getCourseListByTopicList(List <String> topicList) {
+    public List<CourseEntity>  getCourseListByTopicList(List <String> topicList) {
+        String hql_topic = "SELECT te.id " +
+                " FROM TopicEntity te " +
+                " WHERE te.name in:topicList ";
+
+        TypedQuery<TopicEntity> topick_query = em.createQuery(hql_topic, TopicEntity.class);
+        topick_query.setParameter("topicList", topicList);
+
         String hql = "SELECT cc " +
                 " FROM CourseEntity cc " +
-                " WHERE cc.id_topic.name in:topicList ";
+                " WHERE cc.id_topic.name in:topicIds ";
         TypedQuery<CourseEntity> query = em.createQuery(hql, CourseEntity.class);
-        query.setParameter("topicList", topicList);
-        List<CourseEntity> resultList = query.getResultList();
-        return resultList.isEmpty() ? Optional.empty() : Optional.of(resultList.get(0));
+        query.setParameter("topicIds", topick_query.getResultList());
+        return query.getResultList();
     }
 
 

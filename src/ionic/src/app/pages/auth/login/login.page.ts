@@ -5,6 +5,7 @@ import { LoginService } from 'src/app/services/login/login.service';
 import { ErrorService } from 'src/app/services/error/error.service';
 import { AlertService } from 'src/app/services/alert/alert.service';
 import { AndroidFingerprintAuth } from '@ionic-native/android-fingerprint-auth/ngx';
+import { isBoolean } from 'util';
 
 @Component({
   selector: 'app-login',
@@ -60,7 +61,7 @@ export class LoginPage implements OnInit {
 
     const username = this.f.username.value;
     const password = this.f.password.value;
-    const finger = this.f.finger.value === 'true';
+    const finger = isBoolean(this.f.finger.value) ? this.f.finger.value : this.f.finger.value === 'true';
 
     console.log(finger);
 

@@ -21,14 +21,9 @@ export class HomePage implements OnInit {
 
   pathImages = 'assets/cursos/';
   showStudent: boolean;
-  relatedVideos = [
-    { id: 1, title: 'Curso tema one', img: this.pathImages + 'course_one.gif' },
-    { id: 2, title: 'Curso tema two', img: this.pathImages + 'course_two.gif' },
-    { id: 3, title: 'Curso tema three', img: this.pathImages + 'course_three.gif' },
-  ];
 
+  relatedVideos: any[];
   freeVideos: any[];
-
   premiumVideos: any[];
 
   student: any;
@@ -71,6 +66,23 @@ export class HomePage implements OnInit {
         .then(data => {
           this.premiumVideos = JSON.parse(data.data);
           this.premiumVideos.forEach(element => {
+            element.img = this.getImage(element.id);
+          });
+        });
+
+      const aux = localStorage.getItem('videos.related');
+      let relatedUserSelection = JSON.parse(aux);
+
+      this.cursosService.getRecomendados(
+        relatedUserSelection[0],
+        relatedUserSelection[1],
+        relatedUserSelection[2],
+        relatedUserSelection[3]
+      )
+        .then(data => {
+          this.relatedVideos = JSON.parse(data.data);
+          console.log(this.relatedVideos);
+          this.relatedVideos.forEach(element => {
             element.img = this.getImage(element.id);
           });
         });

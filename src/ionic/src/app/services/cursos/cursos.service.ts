@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HTTP } from '@ionic-native/http/ngx';
 import { BaseService } from '../base/base.service';
+import { stringify } from '@angular/core/src/render3/util';
 
 @Injectable({
   providedIn: 'root'
@@ -68,15 +69,19 @@ export class CursosService extends BaseService {
     return this.http.get(this.getFullUrl() + 'get-course-premium', {}, {});
   }
 
-  getRecomendados(office, RRSS, navegador, email) {
+  getRecomendados(office, RRSS, marketing, Google) {
     // Initialize Params Object
-    const params = {
-      office,
-      RRSS,
-      navegador,
-      email
-    };
+    let topic_list: string[];
+    topic_list = [];
 
-    return this.http.get(this.getFullUrl() + 'get-student', params, {});
+    let param = '?';
+    if (office === 'true') { param += 'topic_list=' + 'office' + '&'; }
+    if (RRSS === 'true') { param += 'topic_list=' + 'RRSS' + '&'; }
+    if (marketing === 'true') { param += 'topic_list=' + 'marketing' + '&'; }
+    if (Google === 'true') { param += 'topic_list=' + 'Google' + '&'; }
+
+    return this.http.get(this.getFullUrl() + 'get-course-by-topics' + param, {}, {});
   }
+
+
 }

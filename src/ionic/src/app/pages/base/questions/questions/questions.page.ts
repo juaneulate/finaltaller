@@ -43,7 +43,7 @@ export class QuestionsPage implements OnInit {
     const Google = this.f.Google.value;
     const logge = [office, RRSS, marketing, Google];
 
-    console.log(logge);
+    localStorage.setItem('videos.related', JSON.stringify(logge));
 
     this.navCtrl.navigateRoot('/base');
   }

@@ -45,5 +45,15 @@ public class CourseDao extends BaseDaoImpl {
         return resultList.isEmpty() ? Optional.empty() : Optional.of(resultList.get(0));
     }
 
+    public Optional<CourseEntity>  getCourseListByTopicList(List <String> topicList) {
+        String hql = "SELECT cc " +
+                " FROM CourseEntity cc " +
+                " WHERE cc.id_topic.name in:topicList ";
+        TypedQuery<CourseEntity> query = em.createQuery(hql, CourseEntity.class);
+        query.setParameter("topicList", topicList);
+        List<CourseEntity> resultList = query.getResultList();
+        return resultList.isEmpty() ? Optional.empty() : Optional.of(resultList.get(0));
+    }
+
 
 }

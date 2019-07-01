@@ -29,6 +29,23 @@ public class CourseRest implements Serializable {
     private CourseDao courseDao;
 
     @GET
+    @Path(RestPath.GET_COURSE_BY_TOPICS)
+    public Response restGetCourseTopicList(@QueryParam(RestPath.TOPIC_LIST) List <String> topicList) {
+        try {
+            //
+            Optional<CourseEntity> courseByTopicOpt = courseDao.getCourseListByTopicList(topicList);
+            if (courseByTopicOpt.isPresent()) {
+                return Response.ok(courseByTopicOpt.get()).build();
+            } else {
+                return Response.status(Response.Status.NOT_FOUND).build();
+            }
+        } catch (Exception e) {
+//           log.error(e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e.getMessage()).build();
+        }
+    }
+
+    @GET
     @Path(RestPath.GET_COURSE_TOPIC)
     public Response restGetCourseTopic(@QueryParam(RestPath.TOPIC_ID) long topicId) {
         try {

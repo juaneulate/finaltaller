@@ -1,231 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="finaltaller-server:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8474c330-184c-4803-aa1c-07ab4f899248" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/LoginEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/LoginEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/StudentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/StudentEntity.java" afterDir="false" />
+    <list default="true" id="b049d47e-307d-4f01-9eda-f51b0867708a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cfe03e3b-f2e7-4cc4-99f8-47862ed6f45b.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cfe03e3b-f2e7-4cc4-99f8-47862ed6f45b/storage_v2/_src_/database/taller_ultra_db.ds5yTg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cfe03e3b-f2e7-4cc4-99f8-47862ed6f45b/storage_v2/_src_/database/taller_ultra_db.ds5yTg/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finaltaller-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/finaltaller-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/CourseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/CourseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/TopicEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/TopicEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/VideoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/VideoEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rest/CourseRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/CourseRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/StudentRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/StudentRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/configuration/path/RestPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/configuration/path/RestPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/configuration/configuration/RestActivator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configuration/configuration/RestActivator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/configuration/servlet/RedirectServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configuration/servlet/RedirectServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/BaseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/BaseDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/ChapterDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ChapterDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/LoginDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/ProgressDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ProgressDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/UtilDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UtilDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dto/ContractDto$ContractDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/ContractDto$ContractDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dto/ContractDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/ContractDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dto/DetailTestDto$DetailTestDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/DetailTestDto$DetailTestDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dto/DetailTestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/DetailTestDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dto/PersonLoginDto$PersonLoginDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dto/PersonLoginDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dto/TestDto$TestDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/TestDto$TestDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dto/TestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/TestDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/ChapterEntity$ChapterEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/ChapterEntity$ChapterEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/ChapterEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/ChapterEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/ChapterVideoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/ChapterVideoEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/CommentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/CommentEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/CourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/CourseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/VideoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/VideoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/CourseEntity$CourseEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/CourseEntity$CourseEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/CourseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/CourseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/LoginEntity$LoginEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/LoginEntity$LoginEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/LoginEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/LoginEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/ProgressEntity$ProgressEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/ProgressEntity$ProgressEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/ProgressEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/ProgressEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/PurchaseEntity$PurchaseEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/PurchaseEntity$PurchaseEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/PurchaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/PurchaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/QuestionEntity$QuestionEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/QuestionEntity$QuestionEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/QuestionEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/QuestionEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/ScoreEntity$ScoreEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/ScoreEntity$ScoreEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/ScoreEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/ScoreEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/StudentEntity$StudentEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/StudentEntity$StudentEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/StudentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/StudentEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/TestEntity$TestEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/TestEntity$TestEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/TestEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/TestEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/TopicEntity$TopicEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/TopicEntity$TopicEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/TopicEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/TopicEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/VideoEntity$VideoEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/VideoEntity$VideoEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/VideoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/VideoEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/config/EntityPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/config/EntityPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/enums/EnumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enums/EnumTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rest/LoginRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/LoginRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rest/UtilRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/UtilRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rest/configuration/filter/CORSFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/configuration/filter/CORSFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rest/CourseRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/CourseRest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rest/VideoRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/VideoRest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/rest/configuration/path/RestPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rest/configuration/path/RestPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/ChapterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ChapterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/JsonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/JsonUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/configuration/configuration/RestActivator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/configuration/configuration/RestActivator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/configuration/servlet/RedirectServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/configuration/servlet/RedirectServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/BaseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/BaseDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/ChapterDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/ChapterDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/LoginDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/ProgressDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/ProgressDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/UtilDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/UtilDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/ContractDto$ContractDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/ContractDto$ContractDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/ContractDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/ContractDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/DetailTestDto$DetailTestDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/DetailTestDto$DetailTestDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/DetailTestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/DetailTestDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/PersonLoginDto$PersonLoginDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/PersonLoginDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/TestDto$TestDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/TestDto$TestDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/TestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dto/TestDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ChapterEntity$ChapterEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ChapterEntity$ChapterEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ChapterEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ChapterEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ChapterVideoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ChapterVideoEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/CommentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/CommentEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/CourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/CourseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/VideoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/dao/VideoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/CourseEntity$CourseEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/CourseEntity$CourseEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/CourseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/CourseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/LoginEntity$LoginEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/LoginEntity$LoginEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/LoginEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/LoginEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ProgressEntity$ProgressEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ProgressEntity$ProgressEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ProgressEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ProgressEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/PurchaseEntity$PurchaseEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/PurchaseEntity$PurchaseEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/PurchaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/PurchaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/QuestionEntity$QuestionEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/QuestionEntity$QuestionEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/QuestionEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/QuestionEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ScoreEntity$ScoreEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ScoreEntity$ScoreEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ScoreEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ScoreEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/StudentEntity$StudentEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/StudentEntity$StudentEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/StudentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/StudentEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/TestEntity$TestEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/TestEntity$TestEntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/TestEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/TestEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/TopicEntity$TopicEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/TopicEntity$TopicEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/TopicEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/TopicEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/VideoEntity$VideoEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/VideoEntity$VideoEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/VideoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/VideoEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/config/EntityPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/entity/config/EntityPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/enums/EnumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/enums/EnumTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/LoginRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/LoginRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/UtilRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/UtilRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/configuration/filter/CORSFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/configuration/filter/CORSFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/CourseRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/CourseRest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/VideoRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/VideoRest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/configuration/path/RestPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/rest/configuration/path/RestPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/service/ChapterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/service/ChapterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/utils/JsonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/classes/utils/JsonUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/jboss-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/jboss-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/Java-WebSocket-1.3.8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/Java-WebSocket-1.3.8.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/abi-4.3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/abi-4.3.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/asm-5.0.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/asm-5.0.3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/asm-analysis-5.0.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/asm-analysis-5.0.3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/asm-commons-5.0.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/asm-commons-5.0.3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/asm-tree-5.0.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/asm-tree-5.0.3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/asm-util-5.0.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/asm-util-5.0.3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/bcprov-jdk15on-1.60.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/bcprov-jdk15on-1.60.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/core-4.3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/core-4.3.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/crypto-4.3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/crypto-4.3.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/gson-2.3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/gson-2.3.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.8.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.8.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.8.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.8.5.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.13.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.8.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.8.5.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-jaxrs-1.9.13.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-jaxrs-1.9.13.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-xc-1.9.13.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-xc-1.9.13.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jffi-1.2.16-native.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jffi-1.2.16-native.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jffi-1.2.17.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jffi-1.2.17.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-a64asm-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-a64asm-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-constants-0.9.11.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-constants-0.9.11.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-enxio-0.19.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-enxio-0.19.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-ffi-2.1.9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-ffi-2.1.9.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-posix-3.0.47.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-posix-3.0.47.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-unixsocket-0.21.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-unixsocket-0.21.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-x86asm-1.0.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-x86asm-1.0.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/logging-interceptor-3.8.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/logging-interceptor-3.8.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/lombok-1.18.8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/lombok-1.18.8.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/okhttp-3.8.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/okhttp-3.8.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/okio-1.13.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/okio-1.13.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/reactive-streams-1.0.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/reactive-streams-1.0.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/resteasy-jackson-provider-3.6.2.Final.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/resteasy-jackson-provider-3.6.2.Final.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/rlp-4.3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/rlp-4.3.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/rxjava-2.2.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/rxjava-2.2.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/tuples-4.3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/tuples-4.3.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/utils-4.3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/lib/utils-4.3.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/finaltaller-server-1.0-SNAPSHOT/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/configuration/configuration/RestActivator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/configuration/servlet/RedirectServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/dao/BaseDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/dao/ContractDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/dao/LoginDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/dao/PersonDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/dao/UtilDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/dto/DetailTestDto$DetailTestDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/dto/DetailTestDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/dto/PersonLoginDto$PersonLoginDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/dto/PersonLoginDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/dto/TestDto$TestDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/dto/TestDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ContractDetailEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/entity/ContractEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/entity/LoginEntity$LoginEntityBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/entity/LoginEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/entity/PersonEntity$PersonEntityBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/entity/PersonEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/entity/config/EntityPath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/enums/EnumTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/rest/ContractRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/rest/InfuraRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/rest/PersonRest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/rest/PersonRest$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/rest/PersonRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/rest/UserRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/rest/UtilRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/rest/configuration/filter/CORSFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/rest/configuration/path/RestPath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/service/ContractService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/testing/Greeter$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/testing/Greeter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/testing/InfuraService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/classes/utils/JsonUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/jboss-web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/Java-WebSocket-1.3.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/abi-4.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/asm-5.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/asm-analysis-5.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/asm-commons-5.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/asm-tree-5.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/asm-util-5.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/bcprov-jdk15on-1.60.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/core-4.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/crypto-4.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/gson-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.8.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.8.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.8.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-jaxrs-1.9.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jackson-xc-1.9.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jffi-1.2.16-native.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jffi-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-a64asm-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-constants-0.9.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-enxio-0.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-ffi-2.1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-posix-3.0.47.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-unixsocket-0.21.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/jnr-x86asm-1.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/logging-interceptor-3.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/lombok-1.18.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/okhttp-3.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/okio-1.13.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/reactive-streams-1.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/resteasy-jackson-provider-3.6.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/rlp-4.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/rxjava-2.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/tuples-4.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/lib/utils-4.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smart-contract-server-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -235,93 +53,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="taller_ultra_db@52.14.41.220" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entity/LoginEntity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/StudentEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rest/UtilRest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rest/configuration/path/RestPath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rest/LoginRest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/LoginDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#79#0" expanded="true" />
-                <element signature="e#0#71#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rest/StudentRest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="47" column="5" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dto/StudentLoginDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="195">
+              <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -329,8 +70,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rest/CourseRest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <state relative-caret-position="150">
+              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rest/configuration/path/RestPath.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -338,13 +88,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/CourseDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="107">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
                 <element signature="e#0#56#0" expanded="true" />
                 <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#62#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/CourseEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="38" column="104" selection-start-line="38" selection-start-column="104" selection-end-line="38" selection-end-column="104" />
+              <folding>
+                <element signature="e#1488#1489#0" expanded="true" />
+                <element signature="e#1518#1519#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/TopicEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/VideoEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -357,13 +139,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="3038c77d-1400-4899-899a-849f5adf2f9d/role/postgres" />
-        <option value="$PROJECT_DIR$/src/main/java/rest/TopicRest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rest/configuration/path/RestPath.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/LoginEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/StudentEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rest/StudentRest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/VideoEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/TopicEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/rest/CourseRest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/CourseEntity.java" />
       </list>
     </option>
   </component>
@@ -377,89 +156,11 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="finaltaller-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="finaltaller-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
         </path>
       </expand>
       <select />
     </treeState>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/finaltaller-server.iml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/finaltaller_server_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/finaltaller_server_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_5.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_5.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jffi_1_2_17.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jffi_native_1_2_16.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_a64asm_1_0_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_constants_0_9_11.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_enxio_0_19.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_ffi_2_1_9.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_posix_3_0_47.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_unixsocket_0_21.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_x86asm_1_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_logging_interceptor_3_8_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_8_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava2_rxjava_2_2_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_8_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_4.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_7.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_60.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_4_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_java_websocket_Java_WebSocket_1_3_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_jaxrs_api_3_0_12_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_jackson_provider_3_6_2_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_jaxrs_3_6_2_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_validator_provider_11_3_6_2_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_annotation_jboss_annotations_api_1_2_spec_1_0_0_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_ws_rs_jboss_jaxrs_api_2_1_spec_1_0_2_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_xml_bind_jboss_jaxb_api_2_3_spec_1_0_0_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_5_0_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_5_0_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_0_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_util_5_0_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_web3j_abi_4_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_web3j_core_4_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_web3j_crypto_4_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_web3j_rlp_4_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_web3j_tuples_4_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_web3j_utils_4_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
-        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="170" />
@@ -473,7 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -505,7 +206,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finaltaller-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finaltaller-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="finaltaller-server" type="b2602c69:ProjectViewProjectNode" />
@@ -519,22 +236,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="rest" />
-    </key>
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -548,23 +258,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JBoss Server.JBoss 14.0.11.Final-redhat-00001">
-    <configuration name="JBoss 14.0.11.Final-redhat-00001" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="EAP-7.2.0" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
+  <component name="RunManager" selected="JBoss Server.EAP-7.2.0">
+    <configuration name="EAP-7.2.0" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="EAP-7.2.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9990" />
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
+      <deployment>
+        <artifact name="finaltaller-server:war">
+          <settings />
+        </artifact>
+      </deployment>
       <server-settings>
         <option name="SERVER" />
         <option name="BINDING_SET_NAME" value="" />
         <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" />
+        <option name="SERVER_GROUP" value="main-server-group" />
         <option name="USERNAME" value="" />
         <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="JBoss" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="40871" />
+        <option name="DEBUG_PORT" value="46149" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -613,71 +327,9 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="EAP-7.2.0" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9990" />
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
-      <server-settings>
-        <option name="SERVER" />
-        <option name="BINDING_SET_NAME" value="" />
-        <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" />
-        <option name="USERNAME" value="" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="JBoss" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="40871" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="finaltaller-server:war" />
+        </option>
       </method>
     </configuration>
     <configuration name="clean package" type="MavenRunConfiguration" factoryName="Maven">
@@ -707,7 +359,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JBoss Server.JBoss 14.0.11.Final-redhat-00001" />
+      <item itemvalue="JBoss Server.EAP-7.2.0" />
       <item itemvalue="Maven.clean package" />
     </list>
   </component>
@@ -716,46 +368,55 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8474c330-184c-4803-aa1c-07ab4f899248" name="Default Changelist" comment="" />
-      <created>1561781174422</created>
+      <changelist id="b049d47e-307d-4f01-9eda-f51b0867708a" name="Default Changelist" comment="" />
+      <created>1561927327438</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1561781174422</updated>
-      <workItem from="1561781217020" duration="5181000" />
-      <workItem from="1561796697447" duration="6689000" />
+      <updated>1561927327438</updated>
+      <workItem from="1561927341483" duration="1643000" />
+      <workItem from="1561944703107" duration="3332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11870000" />
+    <option name="totallyTimeSpent" value="4975000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24545455" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25378788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="Persistence" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Web" order="8" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23793103" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38275862" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.59669423" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32931036" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.72068965" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32413793" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32931036" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32931036" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -763,7 +424,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="JSF" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.32954547" />
+      <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" />
@@ -774,230 +435,122 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://3038c77d-1400-4899-899a-849f5adf2f9d/role/test" />
-    <entry file="das://3038c77d-1400-4899-899a-849f5adf2f9d/role/postgres" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3038c77d-1400-4899-899a-849f5adf2f9d/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="uml://DATABASE/3038c77d-1400-4899-899a-849f5adf2f9d">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>3038c77d-1400-4899-899a-849f5adf2f9d</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="320.0" y="187.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/VideoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://cfe03e3b-f2e7-4cc4-99f8-47862ed6f45b/role/test">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UtilDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/StudentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cfe03e3b-f2e7-4cc4-99f8-47862ed6f45b/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest/ChapterRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest/VideoRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest/QuestionRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/BaseDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/StudentEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dto/StudentLoginDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0.1/javaee-api-8.0.1.jar!/javax/ws/rs/core/Response.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/QuestionDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="148" column="50" selection-start-line="148" selection-start-column="50" selection-end-line="148" selection-end-column="50" />
+        <state relative-caret-position="75">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest/configuration/path/RestPath.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ProgressDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest/UtilRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/LoginEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/LoginDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="15">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
-            <element signature="e#0#79#0" expanded="true" />
             <element signature="e#0#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest/TopicRest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/VideoEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="45" column="57" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="57" />
+        <state relative-caret-position="510">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/CourseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="107">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
             <element signature="e#0#56#0" expanded="true" />
             <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest/StudentRest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/StudentEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
+        <state relative-caret-position="195">
+          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/TopicEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rest/configuration/path/RestPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rest/CourseRest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        <state relative-caret-position="150">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rest/LoginRest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/CourseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="135">
+          <caret line="38" column="104" selection-start-line="38" selection-start-column="104" selection-end-line="38" selection-end-column="104" />
+          <folding>
+            <element signature="e#1488#1489#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

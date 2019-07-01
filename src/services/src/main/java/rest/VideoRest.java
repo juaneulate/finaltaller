@@ -25,10 +25,10 @@ public class VideoRest implements Serializable {
 
     @GET
     @Path(RestPath.LIST)
-    public Response restGetVideoList(@QueryParam(RestPath.CHAPTER) int chapter) {
+    public Response restGetVideoList(@QueryParam(RestPath.COURSE_ID) int course_id) {
         try {
-            List<VideoEntity> courseListFree = videoDao.findAllByChapterId(chapter);
-            return Response.ok(courseListFree).build();
+            List<VideoEntity> videoList = videoDao.findAllByCourseId(course_id);
+            return Response.ok(videoList).build();
         } catch (Exception e) {
             // log.error(e);
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e.getMessage()).build();

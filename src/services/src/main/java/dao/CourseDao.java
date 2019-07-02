@@ -1,11 +1,11 @@
 package dao;
 
 import entity.CourseEntity;
-import entity.TopicEntity;
 import entity.QuestionEntity;
 
 import javax.inject.Named;
 import javax.persistence.TypedQuery;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -45,19 +45,21 @@ public class CourseDao extends BaseDaoImpl {
         return query.getResultList();
     }
 
-    public List<CourseEntity>  getCourseListByTopicList(List <String> topicList) {
-        String hql_topic = "SELECT te.id " +
-                " FROM TopicEntity te " +
-                " WHERE te.description in:topicList";
-
-        TypedQuery<TopicEntity> topick_query = em.createQuery(hql_topic, TopicEntity.class);
-        topick_query.setParameter("topicList", topicList);
-
+    public List<CourseEntity>  getCourseListByCourse(long courseId) {
         String hql = "SELECT cc " +
                 " FROM CourseEntity cc " +
-                " WHERE cc.id_topic.name in:topicIds ";
+                " WHERE cc.id=:courseId ";
         TypedQuery<CourseEntity> query = em.createQuery(hql, CourseEntity.class);
-        query.setParameter("topicIds", topick_query.getResultList());
+        query.setParameter("courseId", courseId);
+        return query.getResultList();
+    }
+
+    public List<CourseEntity>  getCourseListByTopicList(List<String> topicList) {
+        String hql = "SELECT cc " +
+                " FROM CourseEntity cc " +
+                " WHERE cc.id_topic.description not in (:topicList) ";
+        TypedQuery<CourseEntity> query = em.createQuery(hql, CourseEntity.class);
+        query.setParameter("topicList", topicList);
         return query.getResultList();
     }
 

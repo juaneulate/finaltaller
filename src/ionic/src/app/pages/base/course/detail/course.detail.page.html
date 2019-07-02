@@ -18,7 +18,7 @@
       </ion-row>
     </div>
   </ion-item>
-  <ion-card>
+  <ion-card *ngIf="showCurso">
     <iframe class="course-video" *ngIf="showVideo" [src]="secureUrl(video.url)" allowfullscreen='true'
       frameborder="0"></iframe>
     <ion-button (click)="fullScreen()" *ngIf="showVideo" expand="full">Pantalla completa</ion-button>

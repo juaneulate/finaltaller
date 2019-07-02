@@ -17,6 +17,7 @@ export class CourseDetailPage implements OnInit {
   curso: any;
   showVideo = false;
   showVideos = false;
+  showCurso = false;
   id: number;
   videos: any[];
 
@@ -63,6 +64,7 @@ export class CourseDetailPage implements OnInit {
             .then(data => {
               const cursos = JSON.parse(data.data);
               this.curso = cursos[0];
+              this.showCurso = true;
               console.log(this.curso);
             });
         });
@@ -70,7 +72,7 @@ export class CourseDetailPage implements OnInit {
   }
 
   fullScreen() {
-    this.youtube.openVideo(this.video.id);
+    this.youtube.openVideo(this.video.code);
   }
 
   acercade() {

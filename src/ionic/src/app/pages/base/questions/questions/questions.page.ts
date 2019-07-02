@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators, FormBuilder } from '@angular/forms';
 import { NavController } from '@ionic/angular';
 import { QuestionsService } from 'src/app/services/questions/questions.service';
+import { isBoolean } from 'util';
 
 @Component({
   selector: 'app-questions',
@@ -37,10 +38,11 @@ export class QuestionsPage implements OnInit {
   save() {
     localStorage.setItem('isFirstTime', 'not');
 
-    const office = this.f.office.value;
-    const RRSS = this.f.RRSS.value;
-    const marketing = this.f.marketing.value;
-    const Google = this.f.Google.value;
+    const office = isBoolean(this.f.office.value) ? this.f.office.value : this.f.office.value === 'true';
+    const RRSS = isBoolean(this.f.RRSS.value) ? this.f.RRSS.value : this.f.RRSS.value === 'true';
+    const marketing = isBoolean(this.f.marketing.value) ? this.f.marketing.value : this.f.marketing.value === 'true';
+    const Google = isBoolean(this.f.Google.value) ? this.f.Google.value : this.f.Google.value === 'true';
+
     const logge = [office, RRSS, marketing, Google];
 
     localStorage.setItem('videos.related', JSON.stringify(logge));

@@ -38,26 +38,33 @@ export class CourseDetailPage implements OnInit {
 
       this.platform.ready()
         .then(dataP => {
-          this.videoService.list(this.id).then(data => {
-            this.videos = JSON.parse(data.data);
-            let first = true;
-            this.videos.forEach(element => {
-              const splited = element.dir.split(',');
-              element.url = splited[0];
-              element.code = splited[1];
+          this.videoService.list(this.id)
+            .then(data => {
+              this.videos = JSON.parse(data.data);
+              let first = true;
+              this.videos.forEach(element => {
+                const splited = element.dir.split(',');
+                element.url = splited[0];
+                element.code = splited[1];
 
-              if (first) {
-                this.video = {
-                  url: element.url,
-                  code: element.code
-                };
-                this.showVideo = true;
-                first = false;
-              }
+                if (first) {
+                  this.video = {
+                    url: element.url,
+                    code: element.code
+                  };
+                  this.showVideo = true;
+                  first = false;
+                }
+              });
+              this.showVideos = true;
+              console.log(this.videos);
             });
-            this.showVideos = true;
-            console.log(this.videos);
-          });
+          this.curssoService.get(this.id)
+            .then(data => {
+              const cursos = JSON.parse(data.data);
+              this.curso = cursos[0];
+              console.log(this.curso);
+            });
         });
     });
   }
@@ -84,6 +91,6 @@ export class CourseDetailPage implements OnInit {
           code: element.code
         };
       }
-    })
+    });
   }
 }

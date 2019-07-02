@@ -71,7 +71,7 @@ export class HomePage implements OnInit {
         });
 
       const aux = localStorage.getItem('videos.related');
-      let relatedUserSelection = JSON.parse(aux);
+      const relatedUserSelection = JSON.parse(aux);
 
       this.cursosService.getRecomendados(
         relatedUserSelection[0],
@@ -91,7 +91,7 @@ export class HomePage implements OnInit {
   }
 
   private getImage(id) {
-    var resultPath = this.pathImages + '';
+    let resultPath = this.pathImages + '';
     switch (id) {
       case 1:
         resultPath += 'course_one.gif';
@@ -123,7 +123,7 @@ export class HomePage implements OnInit {
     }
     console.log(id);
     return resultPath;
-  };
+  }
 
   go(id: number) {
     const navOptions: NavigationOptions = {

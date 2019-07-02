@@ -23,12 +23,12 @@
       frameborder="0"></iframe>
     <ion-button (click)="fullScreen()" *ngIf="showVideo" expand="full">Pantalla completa</ion-button>
     <ion-card-header>
-      <ion-card-subtitle>Awesome {{section}}</ion-card-subtitle>
-      <ion-card-title>Awesome {{section}}</ion-card-title>
+      <ion-card-subtitle>{{curso.id_topic.description}}</ion-card-subtitle>
+      <ion-card-title>{{curso.name}}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <div text-justify>
-        aksndlaksjdjalsfnmf adkamsk ldjalsm masl dmalskd asdl askd mmasmd asmdlasdmasdasdm asmd asdmalsmd
+        {{curso.description}}
       </div>
       <ion-list *ngIf='showVideos'>
         <ion-list-header>

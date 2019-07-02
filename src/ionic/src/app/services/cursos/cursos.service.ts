@@ -71,9 +71,6 @@ export class CursosService extends BaseService {
 
   getRecomendados(office, RRSS, marketing, Google) {
     // Initialize Params Object
-    let topic_list: string[];
-    topic_list = [];
-
     let param = '?';
     if (office === 'true') { param += 'topic_list=' + 'office' + '&'; }
     if (RRSS === 'true') { param += 'topic_list=' + 'RRSS' + '&'; }
@@ -83,5 +80,12 @@ export class CursosService extends BaseService {
     return this.http.get(this.getFullUrl() + 'get-course-by-topics' + param, {}, {});
   }
 
+  get(idCourse: number) {
+    // Initialize Params Object
+    const params = {
+      course_id: idCourse.toString()
+    };
 
+    return this.http.get(this.getFullUrl() + 'get-course', params, {});
+  }
 }

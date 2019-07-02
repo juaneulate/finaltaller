@@ -56,6 +56,21 @@ public class CourseRest implements Serializable {
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e.getMessage()).build();
         }
     }
+    @GET
+    @Path(RestPath.GET_COURSE)
+    public Response restGetCourseById(@QueryParam(RestPath.COURSE_ID) long courseId) {
+        try {
+            //
+            List<CourseEntity> courseByTopic = courseDao.getCourseListByCourse(courseId);
+
+            return Response.ok(courseByTopic).build();
+
+
+        } catch (Exception e) {
+//           log.error(e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e.getMessage()).build();
+        }
+    }
 
 
     @GET

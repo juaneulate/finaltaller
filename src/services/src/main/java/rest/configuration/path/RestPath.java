@@ -28,6 +28,7 @@ public final class RestPath {
     public static final String TOPIC_ID = "topic_id";
     public static final String REST_TOPIC = "topic";
     public static final String TOPIC_LIST = "topic_list";
+    public static final String GET_COURSE = "get-course";
 
     //endregion
 
